@@ -1,3 +1,5 @@
+import { prototype } from "postcss/lib/previous-map";
+
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -16,5 +18,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    "react/prop-types" : "off",
   },
 }
